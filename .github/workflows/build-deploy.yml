@@ -1,0 +1,34 @@
+name: Build And Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install and test on client
+        run: |
+          cd public
+          npm install
+          npm run build
+        env:
+          CI: true
+      - name: On Root directory
+        run: |
+          cd ..
+      - name: Deployment
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy  --project emt-advertisement-kiosks --only hosting:website-addvertisement-kiosk
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

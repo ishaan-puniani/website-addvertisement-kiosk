@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "emt-advertisement-kiosks": {
+      "hosting": {
+        "website-addvertisement-kiosk": [
+          "website-addvertisement-kiosk"
+        ]
+      }
+    }
+  }
+}
