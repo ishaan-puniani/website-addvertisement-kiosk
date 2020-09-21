@@ -44,7 +44,7 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   //>=, not <=
-  if (scroll >= 24) {
+  if (scroll >= 0) {
     //clearHeader, not clearheader - caps H
     $(".main-header").addClass("header-fixed");
   } else {
