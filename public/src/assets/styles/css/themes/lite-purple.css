@@ -20295,6 +20295,8 @@ button.ul-accordion__link {
     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59); }
   .footer_wrap .social-wrap .social-btns-wrap .social-btn.facebook:before {
     background-color: #3b5998; }
+.footer_wrap .social-wrap .social-btns-wrap .social-btn.linkedin:before {
+  background-color: #0077b5; }
   .footer_wrap .social-wrap .social-btns-wrap .social-btn.twitter:before {
     background-color: #3cf; }
   .footer_wrap .social-wrap .social-btns-wrap .social-btn.skype:before {
@@ -20326,6 +20328,9 @@ button.ul-accordion__link {
   .footer_wrap .social-wrap .social-btns-wrap .twitter i {
     color: #3cf;
     -webkit-text-fill-color: #3cf !important; }
+footer_wrap .social-wrap .social-btns-wrap .linkedin i {
+  color: #0077b5;
+  -webkit-text-fill-color: #0077b5 !important; }
   .footer_wrap .social-wrap .social-btns-wrap .google i {
     color: #dc4a38;
     -webkit-text-fill-color: #dc4a38 !important; }
