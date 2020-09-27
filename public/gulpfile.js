@@ -80,7 +80,11 @@ gulp.task("minifyhtml", function() {
     .pipe(htmlmin())
     .pipe(gulp.dest("dist"));
 });
-
+gulp.task("copysitemap", function () {
+  return gulp
+    .src("src/sitemap.xml")
+    .pipe(gulp.dest("dist"));
+});
 gulp.task("images", function() {
   return gulp
     .src("src/assets/images/**/*.+(png|jpg|gif|svg)")
@@ -121,6 +125,7 @@ gulp.task(
     "minifycss",
     "vendorcss",
     "minifyhtml",
+    "copysitemap",
     "images",
     "font"
   )
