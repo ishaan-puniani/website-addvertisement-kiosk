@@ -92,6 +92,12 @@ gulp.task("images", function() {
     .pipe(gulp.dest("dist/assets/images"));
 });
 
+gulp.task("videos", function () {
+  return gulp
+      .src("src/assets/videos/**/*")
+      .pipe(gulp.dest("dist/assets/videos"));
+});
+
 gulp.task("font", function() {
   return gulp.src("src/assets/fonts/**/*").pipe(gulp.dest("dist/assets/fonts"));
 });
