@@ -19972,6 +19972,11 @@ button.ul-accordion__link {
 .slick-list {
   margin: 0 -15px; }
 
+.slick-slide .img-card-top {
+  min-height: 300px;
+  max-height: 300px;
+}
+
 @media only screen and (max-width: 765px) {
   .rightRs {
     position: relative;
@@ -20161,7 +20166,7 @@ button.ul-accordion__link {
   font-size: 130px;
   outline: none;
   position: absolute;
-  left: -1%;
+  left: 0%;
   top: 6%;
   -webkit-background-clip: text;
   background-clip: text;
